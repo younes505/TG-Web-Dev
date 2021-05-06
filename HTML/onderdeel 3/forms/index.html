@@ -1,0 +1,219 @@
+<html lang="nl">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <!-- Google Fonts CDN -->
+   <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poppins">
+   <!-- Main CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Tablet -->
+   <link rel="stylesheet" @media="screen and (max-width: 768px)" href="/css/tablet.css">
+   <!-- Mobile -->
+   <link rel="stylesheet" @media="screen and (max-width: 500px)" href="/css/mobile.css">
+      <!-- JavaScript -->
+   <script defer src="script.js"></script>
+   <!-- Titel -->
+   <title>Titel</title>
+   <!-- Keywords -->
+   <meta name="keywords" content="">
+   <!-- Description -->
+   <meta name="description" content="">
+</head>
+<body>
+   <div class="container">
+   <h1 class="text-center">Opdrachten</h1>
+   <h2 class="text-center">Onderdeel 3:</h2>
+
+   <h3 class="text-center">HTML Forms
+   </h3>
+   <b>1. Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan vullen. Zie hieronder voor een voorbeeld:</b><br><br>
+   <b>2.  Naast input text fields zijn er ook nog andere input fields. Zoals:
+   </b><br><br>
+   <form>
+      <fieldset>
+      <div class="form-control">
+         <label for="achternaam">Achternaam:</label>
+         <input type="text" id="achternaam" placeholder="achternaam">
+      </div>
+      <div class="form-control">
+         <label for="voornaam">Voornaam:</label>
+         <input type="text" id="voornaam" placeholder="voornaam">
+      </div>
+      <div class="form-control">
+         <label for="email">Email:</label>
+         <input type="text" id="email" placeholder="email">
+      </div>
+      <div class="form-control">
+         <label for="geboortedatum">Geboortedatum:</label>
+         <input type="date" id="geboortedatum">
+      </div>
+      <div class="form-control">
+         <label for="male">M:</label>
+         <input type="radio" id="man" value="man">
+         <label for="male">V:</label>
+         <input type="radio" id="vrouw" value="vrouw">
+      </div>
+      <div class="form-control">
+         <label for="postcode">Postcode:</label>
+         <input type="text" id="postcode" placeholder="postcode">
+      </div>
+      <div class="form-control">
+         <label for="adres">Adres:</label>
+         <input type="text" id="adres" placeholder="voornaam">
+      </div>
+      <div class="form-control">
+         <label for="wachtwoord">Wachtwoord:</label>
+         <input type="password" id="wachtwoord">
+      </div>
+      <div class="form-control">
+         <input type="submit">
+         <input type="reset">
+      </div>
+      <div class="form-control">
+         <label for="zoeken">Zoeken:</label>
+         <input type="search" id="zoeken">
+      </div>
+      <div class="form-control">
+         <label for="tijd">tijd:</label>
+         <input type="time" id="tijd">
+      </div>
+      <div class="form-control">
+         <input type="hidden" id="hidden">
+      </div>
+
+      </fieldset>
+   </form>
+   <br>
+
+<b>3. Maak een input email field met een submit knop.</b>
+
+   <form>
+      <fieldset>
+      <div class="form-control">
+         <label for="email">Email:</label>
+         <input type="email" id="email" placeholder="email">
+      </div>
+      <div class="form-control">
+         <input type="submit">
+      </div>
+      </fieldset>
+   </form>
+   <br>
+
+   <b>4. Een formulier kun je ook groeperen. Zie hieronder voor een voorbeeld:</b>
+   <form>
+      <fieldset>
+         <legend>Persoonsgegevens</legend>
+      <div class="form-control">
+         <label for="achternaam">Achternaam:</label>
+         <input type="text" id="achternaam" placeholder="achternaam">
+      </div>
+      <div class="form-control">
+         <label for="voornaam">Voornaam:</label>
+         <input type="text" id="voornaam" placeholder="voornaam">
+      </div>
+      <div class="form-control">
+         <label for="geboortedatum">Geboortedatum:</label>
+         <input type="date" id="geboortedatum">
+      </div>
+      <div class="form-control">
+         <label for="male">M:</label>
+         <input type="radio" id="man" value="man">
+         <label for="male">V:</label>
+         <input type="radio" id="vrouw" value="vrouw">
+      </div>
+      <div class="form-control">
+         <label for="postcode">Postcode:</label>
+         <input type="text" id="postcode" placeholder="postcode">
+      </div>
+      <div class="form-control">
+         <label for="adres">Adres:</label>
+         <input type="text" id="adres" placeholder="voornaam">
+      </div>
+      </fieldset>
+      <div class="form-control">
+         <input type="submit">
+         <input type="reset">
+      </div>
+   </form>
+
+   <b>5. Naast input element heb je ook een select element. Hiermee kan je een dropdown list maken. Maak een drop down list.</b>
+
+   <form>
+      <fieldset>
+      <div class="form-control">
+         <select name="fruit" id="fruit">
+            <option value="appels">appels</option>
+            <option value="bananen">bananen</option>
+            <option value="peren">peren</option>
+         </select>
+      </div>
+      </fieldset>
+   </form>
+   <br>
+
+   <b>6. We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes maak. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie waar je in kan gebruiken en leg dat uit?</b>
+<br><br>
+<ul>
+   <li><b>radio: </b>voor als je tussen twee waarden wilt kiezen</li>
+   <li><b>checkboxes: </b>voor als je tussen meer dan twee waarden wilt kiezen</li>
+   <li><b>dropdownlist: </b>voor als je een keuze moet maken tussen meerdere opties</li>
+</ul>   
+<br>
+
+<b>7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier willen we graag het volgende weten:</b>
+<br><br>
+<b>8. Maak een reserverings formulier om een boek te reserveren. In dit formulier willen we graag het volgende weten: </b>
+<br><br>
+<form>
+   <fieldset>
+      <div class="form-control">
+         <label for="voornaam">Voornaam:</label>
+         <input type="text" id="voornaam" placeholder="voornaam">
+      </div>
+      <div class="form-control">
+         <label for="achternaam">Achternaam:</label>
+         <input type="text" id="achternaam" placeholder="achternaam">
+      </div>
+      <div class="form-control">
+         <label for="email">Email:</label>
+         <input type="text" id="email" placeholder="email">
+      </div>
+      <div class="form-control">
+
+         <label>Lid:</label>
+         <label for="ja">Ja</label>
+         <input type="radio" id="ja" value="ja">
+         <label for="nee">Nee</label>
+         <input type="radio" id="nee" value="nee">
+      </div>
+      <div class="form-control">
+         <label for="sport">Sport:</label>
+         <select id="sport">
+            <option value="tafeltennis">Tafeltennis</option>
+            <option value="badminton">Badminton</option>
+            <option value="squash">Squash</option>
+         </select>
+      </div>
+      <div class="form-control">
+         <label for="datum">Datum:</label>
+         <input type="date" id="datum">
+      </div>
+      <div class="form-control">
+         <label for="tijd">tijd:</label>
+         <input type="time" id="tijd">
+      </div>
+      <div class="form-control">
+         <input type="submit">
+      </div>
+   </fieldset>
+</form>
+
+
+
+</div>
+</body>
+</html>

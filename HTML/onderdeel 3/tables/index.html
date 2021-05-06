@@ -1,0 +1,196 @@
+<html lang="nl">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <!-- Google Fonts CDN -->
+   <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poppins">
+   <!-- Main CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Tablet -->
+   <link rel="stylesheet" @media="screen and (max-width: 768px)" href="/css/tablet.css">
+   <!-- Mobile -->
+   <link rel="stylesheet" @media="screen and (max-width: 500px)" href="/css/mobile.css">
+      <!-- JavaScript -->
+   <script defer src="script.js"></script>
+   <!-- Titel -->
+   <title>Titel</title>
+   <!-- Keywords -->
+   <meta name="keywords" content="">
+   <!-- Description -->
+   <meta name="description" content="">
+</head>
+<body>
+   <div class="container">
+   <h1 class="text-center">Opdrachten</h1>
+   <h2 class="text-center">Onderdeel 3:</h2>
+
+   <h3 class="text-center">HTML Tables
+   </h3>
+
+   <b>10. Om een tabel te maken heb je volgende elementen nodig:
+   </b>
+   <br>
+   <ul>
+      <li><b>table: </b>definieert een HTML-tabel.
+      </li>
+      <li><b>thead: </b>wordt gebruikt om de inhoud van kopteksten in een HTML-tabel te groeperen.
+      </li>
+      <li><b>tbody: </b>wordt gebruikt om de body-inhoud in een HTML-tabel te groeperen.
+      </li>
+      <li><b>tfoot: </b>wordt gebruikt om de inhoud van een voettekst in een HTML-tabel te groeperen.
+      </li>
+      <li><b>th: </b>definieert een kopcel in een HTML-tabel.
+      </li>
+      <li><b>tr: </b>definieert een rij in een HTML-tabel.
+      </li>
+      <li><b>td: </b>definieert een standaard gegevenscel in een HTML-tabel.
+      </li>
+   </ul>
+<br>
+   <b>11. Maak een tabel met &lt;table&gt element. Zie hieronder:</b>
+   <br><br>
+   <table border="1" >
+      <thead>
+      <tr>
+      <th>Voornaam</th>
+      <th>Achternaam</th>
+      <th>Leeftijd</th>
+      <th>Telefoonnr</th>
+      </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>41</td>
+            <td>+31 12345678</td>
+         </tr>
+         <tr>
+            <td>Steven</td>
+            <td>Smith</td>
+            <td>32</td>
+            <td>+31 12345678</td>
+         </tr>
+         <tr>
+            <td>Alexander</td>
+            <td>Beave</td>
+            <td>16</td>
+            <td>+31 12345678</td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+   <b>12. Maak een agenda tabel met &lt;table&gt; element. Zie hieronder: </b>
+
+   <table>
+      <thead>
+      <tr>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th></th>
+      </tr>
+      </thead>
+      <tbody>
+         <tr>
+         <td>Afspraak met tandarts</td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td>Sporten</td>
+         </tr>
+         <tr>
+         <td></td>
+         <td>Huiswerk maken</td>
+         <td>Werken</td>
+         <td>Werken</td>
+         <td></td>
+         </tr>
+         <tr>
+         <td>Afspraak met tandarts</td>
+         <td></td>
+         <td></td>
+         <td>Werken</td>
+         <td>Bij vrienden</td>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+
+   <b>13. Voor het maken van een tabel kan je ook gebruik maken van colspan en rowspan attributen. Zoek uit wat colspan en rowspan attribuut doet en maak het volgende:</b>
+   <br><br>
+   <b>14. Maak nu zelf een tabel met de elementen die je hiervoor hebt geleerd.</b>
+   <br><br>
+
+   <table>
+      <thead>
+         <tr>
+            <th></th>
+            <th>Sport</th>
+            <th>Aantal recreanten</th>
+            <th>Aantal competitie spelers</th>
+            <th>Totale deelnemers</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td></td>
+            <td>Badminton</td>
+            <td>10</td>
+            <td>30</td>
+            <td>40</td>
+         </tr>
+         <tr>
+            <td>Racket sport</td>
+            <td>Tafeltennis</td>
+            <td>59</td>
+            <td>30</td>
+            <td>89</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Tennis</td>
+            <td>159</td>
+            <td>130</td>
+            <td>189</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Badminton</td>
+            <td>10</td>
+            <td>30</td>
+            <td>40</td>
+         </tr>
+         <tr>
+            <td>Tennis 159</td>
+            <td>130</td>
+            <td colspan="3">189</td>
+            <td></td>
+            <td></td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Voetbal</td>
+            <td>88</td>
+            <td>40</td>
+            <td>100</td>
+         </tr>
+         <tr>
+            <td></td>
+            <td>Volleybal</td>
+            <td>35</td>
+            <td>20</td>
+            <td>55</td>
+         </tr>
+      </tbody>
+   </table>
+
+
+   </div>
+</body>
+</html>

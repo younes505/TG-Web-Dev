@@ -1,0 +1,173 @@
+/* Root */
+
+:root {
+  --primary: ;
+  --secondary: ;
+  --light: #fff;
+  --dark: #333;
+  --shadow: 0, 1px, 5px rgba(104, 104, 104, 0.9);
+  --max-width: 90%;
+}
+
+/* CSS RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN STYLING */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+  background: #e5e5e5;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: bolder;
+  padding-bottom: 20px;
+  color: #f13114;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.872rem;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 0.8rem 0;
+  font-size: 1.6rem;
+}
+img {
+  width: 100%;
+}
+
+div,
+header,
+main,
+nav,
+section,
+article,
+aside,
+footer,
+button,
+li {
+  font-size: 1.6rem;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+/* MAIN */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  background-color: #fff;
+  margin: 1rem;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card .card-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5rem;
+}
+
+.card .card-content > * {
+  margin: 2rem 0;
+}
+
+.card .card-content .price {
+  color: #f13114;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.card .card-content button {
+  padding: 1rem;
+  width: 80%;
+  border: none;
+  font-weight: 500;
+}
+
+/* UTILITIES */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem 3.2rem;
+  overflow: hidden;
+}
+
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.shadow {
+  box-shadow: var(--shadow);
+}
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: --light;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 6rem;
+  margin-top: 4rem;
+}
+
+.lead {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
