@@ -1,0 +1,112 @@
+/* Root */
+
+:root {
+  --primary: ;
+  --secondary: ;
+  --light: #fff;
+  --dark: #333;
+  --shadow: 0, 1px, 5px rgba(104, 104, 104, 0.9);
+  --max-width: 70%;
+}
+
+/* CSS RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN STYLING */
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  webkit-font-smoothing: antialiased;
+  font-size: 62.5%;
+  background: var(--light);
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.872rem;
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 0.8rem 0;
+  font-size: 1.6rem;
+}
+b {
+  margin: 0.8rem 0;
+  font-size: 1.6rem;
+}
+img {
+  width: 100%;
+}
+
+div,
+header,
+main,
+nav,
+section,
+article,
+aside,
+footer,
+button,
+li {
+  font-size: 1.6rem;
+}
+
+a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.6rem;
+}
+
+/* MAIN */
+
+/* UTILITIES */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 3.2rem;
+  overflow: hidden;
+}
+
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.shadow {
+  box-shadow: var(--shadow);
+}
+.btn {
+  display: inline-block;
+  background-color: var(--primary);
+  color: --light;
+  padding: 0.6rem 1.2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.8rem;
+  outline: none;
+  border-radius: 0.4rem;
+}

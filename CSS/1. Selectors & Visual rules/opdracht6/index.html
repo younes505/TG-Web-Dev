@@ -1,0 +1,36 @@
+<html lang="nl">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <!-- Google Fonts CDN -->
+   <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Poppins">
+   <!-- Main CSS -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Tablet -->
+   <link rel="stylesheet" @media="screen and (max-width: 768px)" href="/css/tablet.css">
+   <!-- Mobile -->
+   <link rel="stylesheet" @media="screen and (max-width: 500px)" href="/css/mobile.css">
+      <!-- JavaScript -->
+   <script defer src="script.js"></script>
+   <!-- Titel -->
+   <title>Titel</title>
+   <!-- Keywords -->
+   <meta name="keywords" content="">
+   <!-- Description -->
+   <meta name="description" content="">
+</head>
+<body>
+   <p><b>Child selector: </b> Met child selectors kun je een element targetten dat direct onder een element valt. Voorbeeld: ul.my-things > li {
+      margin: 2em;
+    }</p>
+   <p><b>Adjacent sibling selector: </b>selecteert een element dat een specifiek element opvolgt en wanneer beide element een gezamelijke parent hebben. Voorbeeld: img + p {
+      font-weight: bold;
+    }</p>
+   <p><b>General sibling selector: </b>doet het voorgaande, maar heeft niet als vereiste dat hij het eerst geselecteerde element moet opvolgen. Voorbeeld: img ~ p {
+      color: red;
+    }</p>
+</body>
+</html>
