@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         margin: 0;
+         padding: 0;
+      }
+
+      main{
+         background: #FFFACD;
+         display: flex;
+         flex-direction: row;
+         height: 100vh;
+         align-items: center;
+      }
+
+      div{
+         background: #A9AFFD;
+         width: 50px;
+         margin-right: 1rem;
+      }
+
+      div:nth-child(1){
+         /* deze css-regel is niet nodig */
+         height: 100%; 
+      }
+      div:nth-child(2){
+         height: 40%;
+      }
+      div:nth-child(3){
+         height: 50%;
+      }
+      div:nth-child(4){
+         height: 60%;
+      }
+      div:nth-child(5){
+         height: 20%;
+      }
+      div:nth-child(6){
+         height: 30%;
+      }
+
+
+   </style>
+</head>
+<body>
+   <main>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+   </main>
+</body>
+</html>

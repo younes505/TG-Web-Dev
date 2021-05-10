@@ -28,49 +28,40 @@
          margin-bottom: 1rem;
       }
 
+      main .stretch{
+         align-items: stretch;
+      }
+      main .center{
+         align-items: center;
+      }
       main .flex-start{
-         justify-content: flex-start;
+
+         align-items: flex-start;
       }
       main .flex-end{
-         justify-content: flex-end ;
+         align-items: flex-end;
       }
-      .center{
-         justify-content: center;
+      main .space-evenly{
+         align-items: space-evenly;
       }
-      .space-around{
-         justify-content: space-around;
+      main .initial{
+         align-items: initial;
       }
-      .space-evenly{
-         justify-content: space-evenly;
+      main .inherit{
+         align-items: inherit;
       }
-      .initial{
-         justify-content: initial;
-      }
-      .inherit{
-         justify-content: inherit;
-      }
-
-
    </style>
 </head>
 <body>
 
    <main>
-      <div class="row flex-start">
-         <div >flex-start</div>
-         <div >flex-start</div>
-         <div >flex-start</div>
-         <div >flex-start</div>
-         <div >flex-start</div>
-         <div >flex-start</div>
-      </div>
-      <div class="row flex-end">
-         <div >flex-end</div>
-         <div >flex-end</div>
-         <div >flex-end</div>
-         <div >flex-end</div>
-         <div >flex-end</div>
-         <div >flex-end</div>
+      <div class="row stretch">
+         <div >stretch</div>
+         <div >stretch</div>
+         <div >stretch</div>
+         <div >stretch</div>
+         <div >stretch</div>
+         <div >stretch</div>
       </div>
       <div class="row center">
          <div >center</div>
@@ -80,7 +71,15 @@
          <div >center</div>
          <div >center</div>
       </div>
-      <div class="row space-between">
+      <div class="row flex-start">
+         <div >flex-start</div>
+         <div >flex-start</div>
+         <div >flex-start</div>
+         <div >flex-start</div>
+         <div >flex-start</div>
+         <div >flex-start</div>
+      </div>
+      <div class="row flex-end">
          <div >space-between</div>
          <div >space-between</div>
          <div >space-between</div>
@@ -88,37 +87,29 @@
          <div >space-between</div>
          <div >space-between</div>
       </div>
-      <div class="row space-around">
+      <div class="row baseline">
          <div >space-around</div>
          <div >space-around</div>
          <div >space-around</div>
          <div >space-around</div>
          <div >space-around</div>
          <div >space-around</div>
-      </div>
-      <div class="row space-evenly">
-         <div >space-evenly</div>
-         <div >space-evenly</div>
-         <div >space-evenly</div>
-         <div >space-evenly</div>
-         <div >space-evenly</div>
-         <div >space-evenly</div>
       </div>
       <div class="row initial">
-         <div >initial</div>
-         <div >initial</div>
-         <div >initial</div>
-         <div >initial</div>
-         <div >initial</div>
-         <div >initial</div>
+         <div >space-evenly</div>
+         <div >space-evenly</div>
+         <div >space-evenly</div>
+         <div >space-evenly</div>
+         <div >space-evenly</div>
+         <div >space-evenly</div>
       </div>
       <div class="row inherit">
-         <div >inherit</div>
-         <div >inherit</div>
-         <div >inherit</div>
-         <div >inherit</div>
-         <div >inherit</div>
-         <div >inherit</div>
+         <div >initial</div>
+         <div >initial</div>
+         <div >initial</div>
+         <div >initial</div>
+         <div >initial</div>
+         <div >initial</div>
       </div>
          </main>
    
