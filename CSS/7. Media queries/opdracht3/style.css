@@ -1,4 +1,4 @@
-html,
+CSS Code html,
 body {
   max-width: 1200px;
   margin: auto;
@@ -61,7 +61,7 @@ body {
 }
 .gallery-item .thumbnail {
   width: 240px;
-  border: 2px solid GhostWhite;
+  border: 2px solid black;
   border-radius: 4px;
 }
 /* Footer Navigation */
@@ -74,11 +74,11 @@ nav ul {
 nav li {
   display: inline;
   margin: 0 20px 0 0;
-  color: GhostWhite;
+  color: black;
 }
 nav a {
   line-height: 60px;
-  border: 1px solid GhostWhite;
+  border: 1px solid black;
   padding: 7px;
   border-radius: 4px;
   color: DarkOrange;
@@ -93,15 +93,10 @@ nav a {
   position: relative;
   bottom: 2px;
 }
+/* Ik heb geen toegang tot de afbeelding, maar dit is in essentie de oplossing. vanaf na 768px is de breakpoint voor laptops en groter, dus vandaar 768px */
 
-@media (max-width: 480px) {
-  .page-title {
-    width: 270px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .gallery-item {
-    width: 95%;
+@media (min-width: 768px) and (min-resolution: 150dpi) {
+  .logo {
+    background-image: url("/CSS-test/spaceship.png");
   }
 }

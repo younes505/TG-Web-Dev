@@ -100,7 +100,7 @@ nav a {
   }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
   .gallery-item {
     width: 95%;
   }

@@ -1,4 +1,4 @@
-html,
+CSS Code html,
 body {
   max-width: 1200px;
   margin: auto;
@@ -61,7 +61,7 @@ body {
 }
 .gallery-item .thumbnail {
   width: 240px;
-  border: 2px solid GhostWhite;
+  border: 2px solid black;
   border-radius: 4px;
 }
 /* Footer Navigation */
@@ -74,11 +74,11 @@ nav ul {
 nav li {
   display: inline;
   margin: 0 20px 0 0;
-  color: GhostWhite;
+  color: black;
 }
 nav a {
   line-height: 60px;
-  border: 1px solid GhostWhite;
+  border: 1px solid black;
   padding: 7px;
   border-radius: 4px;
   color: DarkOrange;
@@ -94,14 +94,8 @@ nav a {
   bottom: 2px;
 }
 
-@media (max-width: 480px) {
-  .page-title {
-    width: 270px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .gallery-item {
-    width: 95%;
+@media (max-width: 480px) and (max-resolution: 150dpi) {
+  .page-description {
+    font-size: 20px;
   }
 }
