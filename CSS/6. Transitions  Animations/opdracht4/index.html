@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{
+         background-color: #F1F1F1;
+         display: flex;
+
+      }
+
+      .container{
+         border: black solid 1px;
+         background-color: #F1F1F1;    
+         width: 100vw;
+         height: 50vh;
+         display: flex;
+         position: relative;
+         justify-content: center;
+         align-items: center;
+       }
+
+       .container div{
+          width: 50px;
+          height: 50px;
+          border: 1px solid black;
+       }
+
+       .child{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+       }
+
+       /* individuele blokken */
+
+       .child:nth-child(1){
+         transition: 7s ease ;
+       }
+       .container:hover .child:nth-child(1){
+          bottom: 60%;
+       }
+
+       .child:nth-child(2){
+         transition: ;
+       }
+       .container:hover .child:nth-child(2){
+       }
+
+       .child:nth-child(3){
+         transition: ;
+       }
+       .container:hover .child:nth-child(3){
+       }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="child">1</div>
+      <div class="child">2</div>
+      <div class="child">3</div>
+   </div>
+</body>
+</html>
